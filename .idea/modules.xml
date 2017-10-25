@@ -9,6 +9,7 @@
       <module fileurl="file://$PROJECT_DIR$/ffmpeglib1/ffmpeglib1.iml" filepath="$PROJECT_DIR$/ffmpeglib1/ffmpeglib1.iml" />
       <module fileurl="file://$PROJECT_DIR$/ffmpeglib2/ffmpeglib2.iml" filepath="$PROJECT_DIR$/ffmpeglib2/ffmpeglib2.iml" />
       <module fileurl="file://$PROJECT_DIR$/ffmpegopensles/ffmpegopensles.iml" filepath="$PROJECT_DIR$/ffmpegopensles/ffmpegopensles.iml" />
+      <module fileurl="file://$PROJECT_DIR$/videoaudiolib/videoaudiolib.iml" filepath="$PROJECT_DIR$/videoaudiolib/videoaudiolib.iml" />
     </modules>
   </component>
 </project>

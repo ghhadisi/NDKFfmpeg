@@ -1,1 +1,1 @@
-include ':app', ':ffmpeglib1', ':ffmpeglib2', ':ffmpegaudiolib', ':ffmpegaudiolib1', ':ffmpegopensles'
+include ':app', ':ffmpeglib1', ':ffmpeglib2', ':ffmpegaudiolib', ':ffmpegaudiolib1', ':ffmpegopensles', ':videoaudiolib'
