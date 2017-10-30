@@ -57,8 +57,9 @@ SurfaceView surfaceView;
 //        AudioPlayer audioPlayer = new AudioPlayer();
 //        String input = new File(Environment.getExternalStorageDirectory(),"input.mp3").getAbsolutePath();
 //        audioPlayer.sound();
-        File file = new File(Environment.getExternalStorageDirectory(), "input.mp4");
-//        myPlayer.playJava("rtmp://live.hkstv.hk.lxdns.com/live/hks");
+        File file = new File(Environment.getExternalStorageDirectory(), "Warcraft3_End.avi");
         myPlayer.playJava(file.getAbsolutePath());
+
+//        myPlayer.playJava("rtmp://live.hkstv.hk.lxdns.com/live/hks");
     }
 }

@@ -1,5 +1,6 @@
 package com.dbgs.videoaudiolib;
 
+import android.util.Log;
 import android.view.Surface;
 import android.view.SurfaceHolder;
 import android.view.SurfaceView;
@@ -9,6 +10,7 @@ import android.view.SurfaceView;
  */
 
 public class MyPlayer implements SurfaceHolder.Callback {
+    String TAG = "MyPlayer";
     static{
         System.loadLibrary("avcodec-56");
         System.loadLibrary("avdevice-56");
@@ -23,6 +25,7 @@ public class MyPlayer implements SurfaceHolder.Callback {
 
     private SurfaceView surfaceView;
     public   void playJava(String path) {
+        Log.e(TAG,path);
         if (surfaceView == null) {
             return;
         }

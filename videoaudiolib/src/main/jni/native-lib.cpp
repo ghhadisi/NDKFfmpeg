@@ -109,7 +109,7 @@ void *process(void *args) {
     //    解码packet
 
     //编码数据
-    AVPacket *packet = (AVPacket *)av_malloc(sizeof(AVPacket));
+    AVPacket *packet = (AVPacket *)av_mallocz(sizeof(AVPacket));
     //    解码完整个视频 子线程
     int ret;
     while (isPlay ) {
@@ -151,16 +151,15 @@ void *process(void *args) {
 }
 JNIEXPORT void JNICALL
 Java_com_dbgs_videoaudiolib_MyPlayer_play(JNIEnv *env, jobject instance, jstring path_) {
-    const char *path = env->GetStringUTFChars(path_, 0);
 
     // TODO
-    path = env->GetStringUTFChars(path_, 0);
+    const char *path = env->GetStringUTFChars(path_, 0);
 //        实例化对象
     vedio = new FFmpegVedio;
     audio = new FFmpegAudio;
     vedio->setPlayCall(call_video_play);
     pthread_create(&p_tid,NULL,process,NULL);
-    env->ReleaseStringUTFChars(path_, path);
+//    env->ReleaseStringUTFChars(path_, path);
 }
 
 JNIEXPORT void JNICALL
